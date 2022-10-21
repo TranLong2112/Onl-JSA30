@@ -1,0 +1,77 @@
+.nav-bar
+{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    padding: 1%;
+}
+
+.footer-container
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.footer
+{
+  background-color: white;
+  margin-top: 100px;
+}
+
+.footer-content
+{
+  margin-top: 20px;
+}
+
+.gt
+{
+    margin-top: 200px;
+    align-items: center;
+    margin-left: 600px;
+}
+
+.pic1
+{
+    width: 25%;
+    margin-top: 90px;
+}
+
+.gt1
+{
+    margin-top: 50px;
+    align-items: center;
+    margin-left: 500px;
+    display: flex;
+}
+
+.gt1-content
+{
+    justify-content: space-around;
+    margin-right: 50px;
+}
+
+.gt2
+{
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    margin-left: 500px;
+}
+
+.pic2
+{
+    width: 25%;
+    margin-top: 10px;
+}
+
+.gt2-content
+{
+    justify-content: space-around;
+    margin-left: 50px;
+}

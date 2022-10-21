@@ -1,0 +1,313 @@
+.nav-bar
+{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    padding: 1%;
+}
+* {
+  box-sizing:border-box
+}
+h2 {
+  text-align: center;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  align-items: center;
+  margin-left: 280px;
+}
+
+.mySlides {
+    display: none;
+    width: 70%;
+    object-fit: cover;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+ 
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+ 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.product-div
+{
+    border: 2px solid rgb(182, 179, 179);
+    width: 300px;
+    position: relative;
+    margin-bottom: 10px;
+    background-color:white;
+
+}
+
+.product-div:hover
+{
+    border: 2px solid black;
+    cursor:pointer;
+
+}
+
+.product-div:hover .product-price
+{
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.product-img
+{
+    width: 290px;
+}
+.product-price
+{
+    position: absolute;
+    bottom: 60px;
+    background-color: rgb(190, 184, 184);
+    padding: 4px;
+    margin-left: 8px;
+}
+.product-content
+{
+    margin-left: 10px;
+}
+
+.product-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.headings
+{
+  margin: 60px;
+  margin-right: 60px;
+  padding: 1px;
+  text-decoration: underline red;
+}
+
+.seeall
+{
+  background-color: red;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button
+{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.footer
+{
+  background-color: white;
+  margin-top: 50px;
+}
+
+.footer-content
+{
+  margin-top: 20px;
+}
+.sidebar
+{
+  margin-top: 100px;
+  justify-content: space-around;
+  background-color: white;
+  border: 1px solid black;
+  padding: 25px;
+}
+
+.sidebar-content
+{
+  border: 1px solid black;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.slideshow-dot
+{
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
+.dottt
+{
+  align-items: center;
+  margin-left: 930px;
+}
+
+.side-bar
+{
+  margin-top: 119px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.body{
+  overflow: hidden;
+  font-family: sans-serif; 
+  background-color: #387b6a;
+  height: 100vh;  
+}
+
+.menu{
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  padding-top: 60px;
+  background-color: #212121; 
+  transition: 0.5s;
+  transform: translateX(-250px);
+  position: absolute;
+}
+
+.logo {
+  padding: 15px 25px;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+
+}
+
+.logo img{
+  max-width:100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.lu .ill {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  transition: 0.3s;
+
+  padding-left: 25px;
+}
+
+.lu :hover{
+  padding-left: 35px;
+  background-color: #445665;
+}
+
+.lu .ill {
+  display: block;
+  color: #fff;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#open{
+  display: none;
+}
+
+.open{
+  height: 10px
+  width= 80px;
+
+}
+
+.open i{
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 25px;
+  margin-top: 25px;
+  background-color: white;
+  padding: 15px 15px;
+  color: white;
+  z-index: 99;
+
+}
+
+#open:checked ~ .menu{
+  transition: 0.5s;
+  transform: translateX(0);
+
+}
+
+#open:checked ~ .open i{
+  transition: 0.5s;
+  margin-left: 190px;
+  position: fixed;
+}
+
+.side-bar-content
+{
+  display: block;
+  color: #fff;
+  padding: 10px 10px;
+  transition: 0.3s;
+}
+
+.sidebar-slideshow
+{
+  display: flex;
+}

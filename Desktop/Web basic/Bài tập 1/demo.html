@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          margin: 20px;
+        }
+        th, td {
+            padding:0px 10px;
+        }
+        table.center {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+</head>
+<body>
+    <h1 style="text-align: center;"><b>THỜI KHOÁ BIỂU</b></h1>
+
+    <table class="center">
+        <caption style="caption-side: top"><b>BUỔI SÁNG:</b></caption>
+        <thead>
+            <tr>
+                <th>THỜI GIAN</th>
+                <th>Thứ 2</th>
+                <th>Thứ 3</th>
+                <th>Thứ 4</th>
+                <th>Thứ 5</th>
+                <th>Thứ 6</th>
+                <th>Thứ 7</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>7h15-7h50</td>
+            <td>Chào cờ</td>
+            <td>Tiếng Việt</td>
+            <td>Tiếng Việt</td>
+            <td>Toán</td>
+            <td>Â nhạc</td>
+            <td rowspan="7">Nghỉ</td>
+        </tr>
+        <tr>
+            <td>7h55-8h30</td>
+            <td>Tiếng Việt</td>
+            <td>Tiếng Việt</td>
+            <td>Tiếng Việt</td>
+            <td>Thể Dục</td>
+            <td>Tiếng Việt</td>
+        </tr>
+        <tr>
+            <td>8h30-8h50</td>
+            <td style="text-align:center" colspan="5">RA CHƠI</td>
+        </tr>
+        <tr>
+            <td>8h50-9h25</td>
+            <td>Tiếng Việt</td>
+            <td>Mỹ thuật</td>
+            <td>Toán</td>
+            <td>Tiếng Việt</td>
+            <td>Tiếng Việt</td>
+        </tr>
+        <tr>
+            <td>9h30-10h05</td>
+            <td>Toán</td>
+            <td>Toán</td>
+            <td>Thủ công</td>
+            <td>Tiếng Việt</td>
+            <td>HĐNGLL</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>10h10-10h45</td>
+                <td>Đạo đức</td>
+                <td>Tự nhiên-Xã hội</td>
+                <td></td>
+                <td></td>
+                <td>SHTT</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <table style="width:660px" class="center">
+        <caption style="caption-side: top;"><b>BUỔI CHIỀU:</b></caption>
+        <thead>
+            <tr>
+                <th>THỜI GIAN</th>
+                <th>Thứ 2</th>
+                <th>Thứ 3</th>
+                <th>Thứ 4</th>
+                <th>Thứ 5</th>
+                <th>Thứ 6</th>
+                <th>Thứ 7</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>13h45-14h20</td>
+            <td>Rèn TV</td>
+            <td>Rèn toán</td>
+            <td>Rèn TV</td>
+            <td>Rèn toán</td>
+            <td>Tiếng anh</td>
+            <td rowspan="4">Nghỉ</td>
+        </tr>
+        <tr>
+            <td>14h25-15h00</td>
+            <td>Rèn TV</td>
+            <td>Rèn toán</td>
+            <td>Rèn TV</td>
+            <td>Rèn toán</td>
+            <td>Tiếng anh</td>
+        </tr>
+        <tr>
+            <td>15h00-15h25</td>
+            <td style="text-align:center" colspan="5">RA CHƠI</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>15h20-16h00</td>
+                <td>AEROBIC</td>
+                <td>Rèn chữ đẹp</td>
+                <td>Rèn KNS</td>
+                <td>Rèn chữ đẹp</td>
+                <td>SHL</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <form action="/action_page.php" method="get" target="_blank">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website"><br><br>
+        <label for="comment">Comment:</label>
+        <input style="width: 200px; height: 70px;" type="text" id="comment" name="comment"><br><br>
+        <input type="radio" id="female" name="fav_language" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="male" name="fav_language" value="male" checked="checked">
+        <label for="male">Male</label><br>
+        <input type="radio" id="other" name="fav_language" value="other">
+        <label for="other">Other</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
